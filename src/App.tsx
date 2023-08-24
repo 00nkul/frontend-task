@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Sidebar from "./Components/Sidebar";
 import ContactList from "./Components/ContactList";
+import Layout from './Components/Maps-charts/Layout';
 
 function App() {
 
@@ -9,8 +10,8 @@ function App() {
       path: '/',
       element: <Comps component={<ContactList />} />
     }, {
-      path: 'test',
-      element: <Comps component={<h1>this is test </h1>} />
+      path: '/maps-charts',
+      element: <Comps component={<Layout />} />
     }
   ])
   return (

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
     const Menus = [
         { title: "Contacts", link: "/" },
-        { title: "Charts and Maps", link: "test" },
+        { title: "Charts and Maps", link: "/maps-charts" },
     ];
     const [activeLink, setActiveLink] = useState("/");
 
